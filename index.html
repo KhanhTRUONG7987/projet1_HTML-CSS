@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ceci est un site Internet s'appelle Booki qui vous aide de trouver des hébergements et des activités dans la ville de votre choix.">
+    <title>Booki - landing page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+
+    <div id="main-wrapper">
+
+<!-- this part is dedicated to HEADER -->
+        <header>
+            <div class="logo">
+                <a href="index.html"> <img src="img/logo/Booki-desktop.png" alt="this is the logo of Booki for desktop version"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#offers-main">Hébergements</a></li>
+                    <li><a href="#section-activites">Activités</a></li>
+                </ul>
+            </div>
+        </header>
+
+<!-- ................................................Voilà! we just finished the HEADER................................................. -->
+        
+<!--------------------------------------------------------this part is dedicated to MAIN--------------------------------------------------->
+        
+        <main>
+            <!-- This is BANNER -->
+
+            <div class="mobile-wrapper">
+
+            <section class="banner">
+                <h1 class="title">
+                    Trouvez votre hébergement pour des vacances de rêve
+                </h1>
+                <p class="sub-title">
+                    En plein centre-ville ou en pleine nature
+                </p>
+                <div class="search">
+                    <form action="#">
+                        <div class="input-container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Marseille, France" name="search">
+                        </div>
+                        <button type="submit">Rechercher</button>
+                    </form>
+                </div>
+                <div class="filter-container">
+                    <h3>
+                        Filtres
+                    </h3>
+                    <div class="filter-group-btn">
+                        <button class="btn active" onclick="filterSelection('economique')">
+                            <i class="primary-color fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </button>
+                        <button class="btn active" onclick="filterSelection('familial')">
+                            <i class="primary-color fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </button>
+                        <button class="btn active" onclick="filterSelection('romantique')">
+                            <i class="primary-color fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </button>
+                        <button class="btn active" onclick="filterSelection('animaux-autorises')">
+                            <i class="primary-color fa-solid fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="fa-stack">
+                        <i class="secondary-color-2 fa-sharp fa-regular fa-circle fa-stack-2x"></i>
+                        <i class="primary-color fa-solid fa-info fa-stack-1x"></i>
+                    </div>
+                    <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
+                </div>
+            </section>
+            </div>
+
+            <!-- end BANNER -->
+
+            <!-------------------------------------------------------This is the zone of section: OFFERS------------------------------------>
+            <article class="section-offers">
+
+                <!-- Offers - main : hébergements -->
+                <section id="offers-main">
+                    <h2>Hébergements à Marseille</h2> <br>
+                    <div class="offers-main-container">
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=" this is a logement in Marseille which is a youth dortorium named:   Auberge La Canebière">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Auberge La Canebière</p>
+                                    <p class="card-text-content">Nuit à partir de 25€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=" this is a logement in Marseille which is a hotel named:   Hôtel du port">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Hôtel du port</p>
+                                    <p class="card-text-content">Nuit à partir de 52€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=" this is a logement in Marseille which is a hotel named:   Hôtel Les mouettes">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Hôtel Les mouettes</p>
+                                    <p class="card-text-content">Nuit à partir de 76€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=" this is a logement in Marseille which is a hotel named:   Hôtel de la mer">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Hôtel de la mer</p>
+                                    <p class="card-text-content">Nuit à partir de 46€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=" this is a logement in Marseille which is a youth dortorium named:   Auberge Le Panier">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Auberge Le Panier</p>
+                                    <p class="card-text-content">Nuit à partir de 23€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-hebergements">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=" this is a logement in Marseille which is a hotel named:   Hôtel Chez Amina">
+                                <div class="hebergements-titles">
+                                    <p class="caption">Hôtel Chez Amina</p>
+                                    <p class="card-text-content">Nuit à partir de 96€</p>
+                                    <div class="group-star group-stars-main">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button onclick="myFunction()" id="BtnReadMore">Afficher plus</button>
+                </section>
+                <!-- end OFFERS - MAIN : Hébergements -->
+
+                <!-- OFFERS - SPONSORED -->
+                <section id="offers-sponsored">
+                    <div class="sponsored-container-title-icon">
+                        <h2>Les plus populaires</h2>
+                        <i class="primary-color fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="offers-sponsored-container">
+                        <div class="card-sponsored">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=" this is a logement in Marseille which is a hotel named:   Hôtel Le soleil du matin">
+                                <div class="sponsored-titles">
+                                    <div class="sponsor-group-caption-p">
+                                        <p class="caption">Hôtel Le soleil du matin</p>
+                                        <p class="card-text-content">Nuit à partir de 128€</p>
+                                    </div>
+                                    <div class="group-star group-stars-sponsored">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-sponsored">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=" this is a logement in Marseille named:   Chambres d’hôtes Au cœur de l’eau">
+                                <div class="sponsored-titles">
+                                    <div class="sponsor-group-caption-p">
+                                        <p class="caption">Chambres d’hôtes Au cœur de l’eau</p>
+                                        <p class="card-text-content">Nuit à partir de 71€</p>
+                                    </div>
+                                    <div class="group-star group-stars-sponsored">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-sponsored">
+                            <a href="#">
+                                <img src="img/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=" this is a hotel in Marseille named:   Hôtel Bleu et Blanc">
+                                <div class="sponsored-titles">
+                                    <div class="sponsor-group-caption-p">
+                                        <p class="caption">Hôtel Bleu et Blanc</p>
+                                        <p class="card-text-content">Nuit à partir de 68€</p>
+                                    </div>
+                                    <div class="group-star group-stars-sponsored">
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="primary-color fa-solid fa-star"></i>
+                                        <i class="icon-color fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- end OFFERS - SPONSORED -->
+                
+            </article>
+            <!-----------------------------------------------------------end section: OFFERS------------------------------------------------>
+
+            <div class="mobile-wrapper">
+            <!-- This is the zone of section: Activités -->
+                <section id="section-activites">
+                    <h2>Activités à Marseille</h2> <br>
+                    <div class="activites-container">
+                        <div class="card-activites">
+                            <a href="#">
+                                <img src="img/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo of Vieux Port">
+                                <div class="cap-zone">
+                                    <p class="caption">Vieux-Port</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-activites">
+                            <a href="#">
+                                <img src="img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo of Fort de Pomègues">
+                                <div class="cap-zone">
+                                    <p class="caption">Fort de Pomègues</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-activites">
+                            <a href="#">
+                                <img src="img/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo of Parc national des Calanques">
+                                <div class="cap-zone">
+                                    <p class="caption">Parc national des Calanques</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-activites">
+                            <a href="#">
+                                <img src="img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo of Notre Dame de la Garde">
+                                <div class="cap-zone">
+                                    <p class="caption">Notre-Dame-de-la-Garde</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- end section : Activités -->
+
+        </main>
+<!-- ...................................................Voilà! we just finished the MAIN................................................. -->
+
+<!-----------------------------------------------------------this part is dedicated to FOOTER----------------------------------------------->
+        <footer>
+            <section class="a-propos">
+                <h3 class="title">À propos</h3><br>
+                <div class="footer-col1">
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="nos-hebergements">
+                <h3 class="title">Nos hébergements</h3><br>
+                <div class="footer-col2">
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="assistance">
+                <h3 class="title">Assistance</h3><br>
+                <div class="footer-col3">
+                    <ul>
+                        <li><a href="#">Centre d’aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+<!-- ...............................................Voilà! we touched the end of the FOOTER.............................................. -->        
+    
+    </div>  
+
+</body>
+</html>
